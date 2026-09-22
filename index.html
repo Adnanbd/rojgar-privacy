@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rojgar Privacy Policy</title>
+<style>
+:root{--bg:#fff;--fg:#111;--line:#ddd}
+@media (prefers-color-scheme:dark){:root{--bg:#0d0d0d;--fg:#eee;--line:#333}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,"Segoe UI",Roboto,"Noto Sans Bengali",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 16px;letter-spacing:-.02em}
+h2{font-size:1.2rem;margin:36px 0 8px;padding-top:12px;border-top:2px solid var(--fg)}
+a{color:var(--fg);text-decoration-thickness:1px;text-underline-offset:3px}
+code{font-size:.9em;word-break:break-all}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:8px;border-bottom:1px solid var(--line)}
+th{border-bottom:2px solid var(--fg)}
+</style>
+</head>
+<body><main>
+<h1>Rojgar — Privacy Policy</h1>
+<p><strong>Effective date:</strong> 19 September 2026<br><strong>App:</strong> Rojgar (Android package <code>com.adnanfoundation.momo</code>)<br><strong>Developer:</strong> Shoeb Adnan<br><strong>Contact:</strong> shoeb.adnan.cse@gmail.com</p>
+<p>Rojgar is a personal money manager. It is built so that your financial records stay with you. This policy explains exactly what the app does with your data.</p>
+<h2>The short version</h2>
+<ul><li>Rojgar has <strong>no account, no server, no analytics, no advertising and no tracking</strong>.</li><li>Everything you enter is stored <strong>only on your device</strong>.</li><li>The developer <strong>never receives, sees, sells or shares</strong> your data.</li><li>Optional backup and Google Drive sync are <strong>end-to-end encrypted</strong> with a passphrase only you know.</li></ul>
+<h2>1. Data the app stores on your device</h2>
+<p>When you use Rojgar, the following is stored in a local database on your phone:</p>
+<ul><li>Money sources you create (name, type, colour, icon, balance history).</li><li>Entries: amounts, dates, notes, reasons, tags, transfers, loans.</li><li>Templates, recurring rules, alerts and in-app notifications.</li><li>Zakat calculations and the rates you enter.</li><li>App settings (language, theme, hidden-amount preference, app-lock setting).</li></ul>
+<p>This data never leaves your device unless <strong>you</strong> choose one of the options in sections 3 and 4.</p>
+<h2>2. Data we collect</h2>
+<p><strong>None.</strong> Rojgar does not collect personal information, usage statistics, crash reports, device identifiers, location, contacts or advertising IDs. It contains no third-party analytics or advertising SDKs.</p>
+<h2>3. Encrypted backup (optional)</h2>
+<p>If you turn on Backup, or export a backup file:</p>
+<ul><li>The app writes a <code>.momo</code> file containing your records, <strong>encrypted</strong> with a key derived from your passphrase (Argon2id key derivation, AES-256-GCM encryption).</li><li>The file is saved to a folder <strong>you choose</strong> on your device, or shared to a place you choose via your phone's share sheet.</li><li>Without your passphrase the file cannot be read — not by us, and not by anyone else. <strong>If you forget the passphrase, the backup cannot be recovered.</strong></li></ul>
+<p>The app's encrypted backup replaces Android's automatic cloud backup, which is turned off for Rojgar.</p>
+<p><strong>CSV export.</strong> Settings → Export CSV creates a plain spreadsheet file of your entries and hands it to your phone's share sheet. This file is <strong>not encrypted</strong> — the app warns you before creating it. Where it goes is your choice; the app sends it nowhere by itself.</p>
+<h2>4. Google Drive sync (optional)</h2>
+<p>If you connect Google Drive:</p>
+<ul><li>You sign in with Google. The app requests <strong>only</strong> the <code>https://www.googleapis.com/auth/drive.appdata</code> permission. This gives the app access to a hidden, app-specific folder in <strong>your own</strong> Drive. It cannot see, read or change any of your other Drive files.</li><li>The app stores <strong>only encrypted files</strong> in that folder: one encrypted file per device, plus a small file holding the encryption salt and a passphrase check value (not the passphrase and not the key).</li><li>Your records are encrypted on your phone <strong>before</strong> upload. Google stores ciphertext and cannot read it. The developer has no access to your Drive.</li><li>Your Google account ID is used on your device only, to link your records to your Drive folder. It is not sent anywhere else.</li></ul>
+<p><strong>Google API Services User Data Policy.</strong> Rojgar's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from Google APIs is used only to provide the sync feature you turned on; it is not used for advertising, not transferred to others, and not read by any human.</p>
+<h2>5. Device permissions</h2>
+<table><thead><tr><th>Permission</th><th>Why</th></tr></thead><tbody><tr><td>Notifications</td><td>Local reminders for recurring entries and alerts. Created on your phone; nothing is sent to a server.</td></tr><tr><td>Run at startup</td><td>Re-schedules those reminders after your phone restarts.</td></tr><tr><td>Biometric</td><td>Optional app lock. Handled by your phone's operating system; the app never receives your fingerprint or face data.</td></tr><tr><td>Internet</td><td>Used only for Google Drive sync (if enabled) and to open the BAJUS gold-price website in your browser when you tap that link.</td></tr></tbody></table>
+<h2>6. Links to other websites</h2>
+<p>The zakat feature can open the BAJUS website in your browser. That site has its own privacy policy; Rojgar sends it no data.</p>
+<h2>7. Deleting your data</h2>
+<ul><li><strong>In the app:</strong> Settings → Delete all data erases everything stored on the device.</li><li><strong>Uninstalling</strong> the app deletes all its on-device data. Backup files you saved to a folder of your choice remain until you delete them.</li><li><strong>Google Drive:</strong> Settings → Delete all data → tick <em>Also delete Rojgar's encrypted data from Google Drive</em>. Or go to Google Drive → Settings → Manage apps → Rojgar → <em>Delete hidden app data</em>. You can also revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li></ul>
+<h2>8. Security</h2>
+<p>Records are protected on the device by the optional app lock and Android's app-sandboxing. The encryption key for backup/sync is held in the Android Keystore. Backup and sync data that leaves the device is end-to-end encrypted; the only exception is a CSV file you explicitly choose to export.</p>
+<h2>9. Children</h2>
+<p>Rojgar is not directed at children under 13 and does not knowingly collect any data from anyone, including children.</p>
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted at this address with a new effective date. Because the app collects no data, changes will not affect data we hold — we hold none.</p>
+<h2>11. Contact</h2>
+<p>Questions about this policy: <strong>shoeb.adnan.cse@gmail.com</strong></p>
+</main></body>
+</html>
